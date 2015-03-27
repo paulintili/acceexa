@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Capture Photo</title>
+	
+	
+	
+	 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -87,6 +93,7 @@
     }
 
     // Called if something bad happens.
+    // Called if something bad happens.
     //
     function onFail(message) {
       alert('Failed because: ' + message);
@@ -95,6 +102,7 @@
     </script>
   </head>
   <body>
+  <a class="waves-effect waves-light btn" onclick="capturePhoto();">Stuff</a>
     <button onclick="capturePhoto();">Capture Photo</button> <br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
